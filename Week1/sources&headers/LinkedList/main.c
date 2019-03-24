@@ -243,4 +243,5 @@ void Mune(void)
             default :   PrintLine(); puts("INPUT ERROR"); Wait();
         }
     }
+    DestroyList(&Head);
 }
