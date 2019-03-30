@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1553390241 source:e:\workspace\dulinkedlist\dulinkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	"duLinkedList.h"
+
+1553352591 e:\workspace\dulinkedlist\dulinkedlist.h
+
+1553390291 source:e:\workspace\dulinkedlist\main.c
+	<stdio.h>
+	<stdlib.h>
+	"duLinkedList.h"
+

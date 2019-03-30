@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1553415473 source:e:\workspace\linkedlist\main.c
+	<stdio.h>
+	<stdlib.h>
+	"linkedList.h"
+
+1553331673 e:\workspace\linkedlist\linkedlist.h
+
+1553390722 source:e:\workspace\linkedlist\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	"linkedList.h"
+
+1553390722 source:e:\workspace\weeks\week1\linkedlist\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	"linkedList.h"
+
+1553331673 e:\workspace\weeks\week1\linkedlist\linkedlist.h
+
+1553415473 source:e:\workspace\weeks\week1\linkedlist\main.c
+	<stdio.h>
+	<stdlib.h>
+	"linkedList.h"
+
