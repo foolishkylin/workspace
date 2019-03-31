@@ -288,7 +288,7 @@ int IsEmpty(Stack s, char which)
 int Pretreatment(char *str)
 {
     int pos, len = strlen(str);
-    if (!isdigit(str[len-1])) return 0;
+    if (!(isdigit(str[len-1]) || str[len-1] == ')')) return 0;
     for (pos = 0; pos < len; pos++)
         if(! ((str[pos] >= '0' && str[pos] <= '9') || str[pos] == '+' || str[pos] == '('
             || str[pos] == '-' || str[pos] == '*'  || str[pos] == '/' || str[pos] == ')'
