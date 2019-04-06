@@ -37,6 +37,11 @@ void InitAQueue(AQueue *Q)
  */
 void DestoryAQueue(AQueue *Q)
 {
+    if (!IsTypeSelected)
+    {
+        Print("You need to create a queue first\n");
+        return FALSE;
+    }
     int star = Q->front;
     for (; star < Q->length + Q->front; star++)
         free(Q->data[star % MAXQUEUE]);
