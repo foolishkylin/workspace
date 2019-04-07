@@ -74,7 +74,7 @@ void *GetKey(char type)
         case 'S':       while (1)
                         {
                             Print("");
-                            if (scanf("%s",Scopy) != 1)
+                            if (scanf("%20s",Scopy) != 1)
                             {
                                 Print("Input ERROR\n");
                                 continue;
@@ -87,6 +87,12 @@ void *GetKey(char type)
         default:    Print("ERROR\n");
     }
     while(getchar() != '\n');
+    if (type != 'I')
+        free(Icopy);
+    if (type != 'F')
+        free(Fcopy);
+    if (type != 'C' && type != 'S')
+        free(Scopy);
     return key;
 }
 
@@ -182,7 +188,7 @@ void Menu(void)
         puts("   A. Create/Recreate a queue");
         puts("   B. Destroy the queue");
         puts("   C. Clean the queue");
-        puts("   D. Get the length of queue");
+        puts("   D. Get the length of stack");
         puts("   E. Enqueue");
         puts("   F. Get the head element");
         puts("   G. Dequeue");
@@ -212,7 +218,7 @@ void Menu(void)
                         while (1)
                         {
                             Print("");
-                            if(scanf("%d", &times) == 1)
+                            if(scanf("%d", &times) == 1 && times > 0)
                                 break;
                             else
                             {
